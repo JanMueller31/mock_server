@@ -8,13 +8,12 @@ const authService = require('./services/auth')
 const profileService = require('./services/profile')
 const todoServcie = require('./services/todo')
 
+app.use(bodyParser.json())
+
 app.use('/', indexRouter)
-app.use('/auth', authService)
-app.use('/profile', profileService)
-app.use('/todo', todoServcie)
-
-//app.use(bodyParser.urlencoded({extended:true}))
-
+//app.use('/auth', authService)
+/app.use('/profile', profileService)
+//app.use('/todo', todoServcie)
 
 app.listen(process.env.PORT || 3000)
 
