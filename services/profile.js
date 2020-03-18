@@ -8,7 +8,7 @@ router.get('/', (req,res)=>{
     console.log(req.headers)
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
-    res.send(req.headers)
+    res.send('GET profile service')
 })
 
 //POST /profile
