@@ -5,7 +5,5 @@
 * /profile/:id
 
 ## Todo-Service
-* /todo
-* /todo/:id
-* /todo/liste
-* /todo/liste/:id
+* /todos
+* /todos/:id
