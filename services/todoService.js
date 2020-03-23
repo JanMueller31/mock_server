@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const GET_todos = require('../mock_jsons/GetTodosResponse')
-const GET_todosID = require('../mock_jsons/GetTodosIdResponse')
+const GET_todosID = require('../mock_jsons/GetTodosIDResponse')
 const GET_todosLists = require('../mock_jsons/GetTodosListsResponse')
-const GET_todosListsID = require('../mock_jsons/GetTodosListsIdResponse')
+const GET_todosListsID = require('../mock_jsons/GetTodosListsIDResponse')
 
 // GET /todos
 router.get('/', (req,res)=>{
@@ -63,7 +63,7 @@ router.post('/todos', (req,res)=>{
 })
 
 // POST /todos/todoLists
-router.post('/todos/todoLists', (req,res)=>{
+router.post('/todoLists', (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
@@ -76,7 +76,7 @@ router.post('/todos/todoLists', (req,res)=>{
 })
 
 // PUT /todos/{id}
-router.put('/todos/:id', (req,res)=>{
+router.put('/:id', (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
@@ -89,7 +89,7 @@ router.put('/todos/:id', (req,res)=>{
 })
 
 // PUT /todos/todoLists/{id}
-router.put('/todos/todoLists/:id', (req,res)=>{
+router.put('/todoLists/:id', (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
@@ -102,7 +102,7 @@ router.put('/todos/todoLists/:id', (req,res)=>{
 })
 
 // DELETE /todos/{id}
-router.delete('/todos/:id', (req,res)=>{
+router.delete('/:id', (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
@@ -115,7 +115,7 @@ router.delete('/todos/:id', (req,res)=>{
 })
 
 // DELETE /todos/todoLists/{id}
-router.delete('/todos/todoLists/:id', (req,res)=>{
+router.delete('/todoLists/:id', (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
     console.log('originalURL: ' + req.originalUrl)
