@@ -1,12 +1,14 @@
 # Mock-server
 
 ## Profile-Service
-* /profile
-* /profile/:id
+* /profiles
+* /profiles/:id
 
 ## Todo-Service
 * /todos
 * /todos/:id
+* /todos/todoLists
+* /todos/todoLists/:id
 
 ## Auth-Service
 * /login
