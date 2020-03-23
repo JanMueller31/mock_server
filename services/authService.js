@@ -5,7 +5,7 @@ const router = express.Router()
 const jwt = require('jsonwebtoken')
 
 
-// Login
+// Login returns a JWT token
 router.post('/login',  (req,res)=>{
     //Authenticate User
 
@@ -17,7 +17,7 @@ router.post('/login',  (req,res)=>{
     res.json({ accessToken: accessToken })
 })
 
-// register - not implemented
+// register - not implemented, just returns the request body
 router.post('/register',authenticateToken, (req,res)=>{
     console.log('*** New Request ***')
     console.log('method: ' + req.method)
@@ -30,7 +30,7 @@ router.post('/register',authenticateToken, (req,res)=>{
     res.send(req.user)
 })
 
-
+// function to authenticate the JWT token
 function authenticateToken(req,res,next){
     const authHeader = req.headers['authorization']
     const token = authHeader && authHeader.split(' ')[1]

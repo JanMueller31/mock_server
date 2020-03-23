@@ -3,12 +3,16 @@ GET http://localhost:3000/
 ###
 
 POST http://localhost:3000/auth/register
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGFucyIsImlhdCI6MTU4NDk5Mjc0NX0.VrWzNP5uNSXchxptnpb4VRGLI1Xh5mEKzZdoePr7dJc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWdvbiIsImlhdCI6MTU4NDk5Mzk3NX0.Pm7bzvsncFNqg8O9tnCNtWINYfECbghUAI3OENG_7yc
+
+{
+    "test_body": "test"
+}
 
 ###
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "Hans"
+    "username": "Egon"
 }
