@@ -7,7 +7,7 @@ const authService = require('./services/authService')
 const profileService = require('./services/profileService')
 const todoServcie = require('./services/todoService')
 
-app.use(bodyParser.json())
+app.use(express.json())
 
 app.use('/', indexRouter)
 app.use('/auth', authService)

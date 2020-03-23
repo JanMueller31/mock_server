@@ -2,11 +2,13 @@ GET http://localhost:3000/
 
 ###
 
-POST http://localhost:5000/profile/
+POST http://localhost:3000/auth/register
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGFucyIsImlhdCI6MTU4NDk5Mjc0NX0.VrWzNP5uNSXchxptnpb4VRGLI1Xh5mEKzZdoePr7dJc
+
+###
+POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "name": "jan_test"
+    "username": "Hans"
 }
-
-
